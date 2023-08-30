@@ -1,6 +1,5 @@
 import logo from './logo.svg';
 import './App.css';
-import { SuperflowToolbar } from '@usesuperflow/toolbar';
 import { initSuperflow } from '@usesuperflow/client';
 import { useEffect } from 'react';
 
