@@ -1,13 +1,22 @@
 import logo from './logo.svg';
 import './App.css';
+import { SuperflowToolbar } from '@usesuperflow/toolbar';
+import { initSuperflow } from '@usesuperflow/client';
+import { useEffect } from 'react';
+
 
 function App() {
+
+  useEffect( () => {
+    initSuperflow('XyP7u3xQtt0pSEwv6T0f', {
+      projectId: '8503152202185337'
+    });
+  })
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
           className="App-link"
