@@ -1,4 +1,6 @@
 import './App.css';
+import logo from './logo.svg';
+
 import { initSuperflow } from '@usesuperflow/client';
 import { useEffect } from 'react';
 
@@ -13,10 +15,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-          Test out Superflow by highlighting this text.
+        <img src={logo} className="App-logo" alt="logo" />
+          <p>Test out Superflow by highlighting this text.</p>
       </header>
     </div>
   );
 }
 
 export default App;
+
